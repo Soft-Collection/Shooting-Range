@@ -17,8 +17,8 @@ If RTSP Camera is selected, you can edit the connection list for RTSP Cameras by
 Web Cameras respectively. The next step – click the connect button. When connection status led is
 green – you are connected. Click New Game button and play the game. 
 
-![Connection Diagram](Images/SoftCollection ShootingRange1.gif)
+![Connection Diagram](Images/SoftCollection%20ShootingRange1.gif)
 
-![Connection Diagram](Images/SoftCollection ShootingRange2.png)
+![Connection Diagram](Images/SoftCollection%20ShootingRange2.png)
 
-![Connection Diagram](Images/SoftCollection ShootingRange3.png)
+![Connection Diagram](Images/SoftCollection%20ShootingRange3.png)
