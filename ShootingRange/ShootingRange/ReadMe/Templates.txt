@@ -1,0 +1,14 @@
+﻿        #region Inner Classes
+        #endregion
+
+		#region Enums
+        #endregion
+
+        #region Variables
+        #endregion
+
+        #region Constructor / Destructor
+        #endregion
+
+        #region Methods
+        #endregion

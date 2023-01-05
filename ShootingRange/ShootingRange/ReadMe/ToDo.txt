@@ -1,0 +1,26 @@
+﻿+1. Color Conversion Resize must be supported.
+2. Decoding must work also with no Format Context.
++3. Add FFMPEG LOG Mechanism.
++4. mConnectionState must be set in RTSP!
+5. Adjust Buffer Functionality.
+6. Adjust VMD Functionality.
+7. Connect/Disconnect and clear picture when needed.
+//--------------------------------------------------------
+8. SyncLock:
+	void DeviceSetRGBResizedWidth(void* handle, int value);
+	void DeviceSetRGBResizedHeight(void* handle, int value);
+	void DeviceSetAverageBufferSizeInFrames(void* handle, int value);
+	void DeviceSetResizeSquare(void* handle, int value);
+	void DeviceSetTolerance(void* handle, int value);
+	void DeviceSetMedianSquare(void* handle, int value);
+	void DeviceSetMinimalDistanceBetweenTwoObjects(void* handle, int value);
+	void DeviceSetMinWidth(void* handle, float value);
+	void DeviceSetMinHeight(void* handle, float value);
+	void DeviceSetMaxWidth(void* handle, float value);
+	void DeviceSetMaxHeight(void* handle, float value);
+	void DeviceSetMaximalAmountOfObjectsToFind(void* handle, int value);
+	void DeviceSetInstantMotionAcceptedColor(void* handle, COLORREF value);
+//--------------------------------------------------------
+9. Only one instance of settings window.
+10. Draw array is null (must check)
+11. #define RGB(r,g,b) ((COLORREF)(((BYTE)(r)|((WORD)((BYTE)(g))<<8))|(((DWORD)(BYTE)(b))<<16)))

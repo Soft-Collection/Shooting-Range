@@ -1,0 +1,14 @@
+﻿1. In order to use Live555 Server for streamming RAW HD (1920x1080) H264 Video, please:
+   1.1 Use Live555 Server with Buffer Size changed.
+       In the file: mediaServer\DynamicRTSPServer.cpp change OutPacketBuffer::maxSize from 100000 to 1000000
+	   //--------------------------------------------------------------------------------
+       NEW_SMS("H.264 Video");
+       OutPacketBuffer::maxSize = 1000000; // allow for some possibly large H.264 frames
+       sms->addSubsession(H264VideoFileServerMediaSubsession::createNew(env, fileName, reuseSource));
+	   //--------------------------------------------------------------------------------
+	   Rebuild the project.
+   1.2 Prepare video file. Convert it to RAW HD H264 Video format using FFMPEG:
+       ffmpeg -i MyFile.mp4 -vcodec copy -an -bsf:v h264_mp4toannexb MyFile.264
+2. 
+
+ 
