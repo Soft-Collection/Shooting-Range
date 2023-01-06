@@ -1,4 +1,11 @@
 ipch
-Debug
-Release
 ShootingRange.sdf
+/Debug
+/Release
+/Common/Debug
+/Common/Release
+/FFMpeg/ffmpeg-20160310-win32/Debug
+/FFMpeg/ffmpeg-20160310-win32/Release
+/VMDFL/Debug
+/VMDFL/Release
+/ShootingRange/obj
